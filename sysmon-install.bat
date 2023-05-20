@@ -1,16 +1,9 @@
 @echo off
-:: - SYSMON GPO installer scripts.
-:: - Managed By Bret.S
-:: - Blog : htttps://CyberGladius.com
-:: - Twitter : @CyberGladius
-:: - GitHub : https://github.com/Brets0150/CG_BlueTeamTools
-:: - Version : 1.0
-:: - Date : 2022-06-24
 :: - Description : This script is meant to be used with a "Startup Script GPO" to install the Sysmon.
 ::                 The will script will check is Sysmon is running, if not it will install it, if it is then update the config.
 
 :: - Variables for script. You MUST update these variable to match your system.
-set FileServerFQDN=DC1.testlab.com
+set FileServerFQDN=WIN2K19DCNAME.NAME.LAB
 set SysmonSDPSharePath=sdp$\Sysmon
 set SysmonConfig=sysmonconfig-export.xml
 set SysmonExe=Sysmon64.exe
